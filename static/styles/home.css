@@ -1,0 +1,48 @@
+
+.social-icon {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: black;
+    color: #6c757d;
+    font-size: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+.uk-panel{
+    height: 100vh;
+}
+
+.social-icon:hover {
+    background-color: #144171;
+    color: white;
+    transform: scale(1.1);
+}
+
+.rounded-circle {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.text-muted {
+    font-size: 1.1rem;
+}
+
+html, body {
+    height: 100%; 
+}
+
+.uk-panel {
+    min-height: calc(140vh - 150px); 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+footer {
+    position: relative;
+    bottom: 0px; 
+    width: 100%;
+}
