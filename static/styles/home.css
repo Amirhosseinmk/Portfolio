@@ -14,7 +14,8 @@
     margin-right: 10px;
 }
 .uk-panel{
-    height: 100vh;
+    height: 300vh;
+    margin-bottom: 30px;
 }
 
 .social-icon:hover {
@@ -43,6 +44,25 @@ html, body {
 
 footer {
     position: relative;
-    bottom: 0px; 
+    bottom: 100px; 
     width: 100%;
+}
+/* Ensure a consistent grid layout for smaller screens */
+.row {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust gap between rows */
+}
+
+/* Ensure cards take up the full width on small screens */
+.col-12 {
+    width: 100%;
+}
+
+/* Maintain equal spacing between cards */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
