@@ -8,26 +8,26 @@
 {% include 'navbar.html' %}
 <section class="usersList">
   <div class="uk-background-primary uk-padding uk-panel">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      {% for project in projects %}
-      <div class="col">
-        <div class="card h-100" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title" style="font-weight: bold;">{{ project.project_name }}</h5>
-            <p class="card-text" style="border-bottom: solid 1px black;">{{ project.description }}</p>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Languages:</h6>
-            <ul>
-              {% for language in project.project_language.all %}
-              <li>{{ language.language_name }} ({{ language.percentage }}%)</li>
-              {% endfor %}
-            </ul>
-            <a href="{{ project.project_link }}" class="btn btn-warning">Repo</a>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for project in projects %}
+        <div class="col mb-4"> <!-- Added margin-bottom for vertical spacing -->
+          <div class="card h-100" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title" style="font-weight: bold;">{{ project.project_name }}</h5>
+              <p class="card-text" style="border-bottom: solid 1px black;">{{ project.description }}</p>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Languages:</h6>
+              <ul>
+                {% for language in project.project_language.all %}
+                <li>{{ language.language_name }} ({{ language.percentage }}%)</li>
+                {% endfor %}
+              </ul>
+              <a href="{{ project.project_link }}" class="btn btn-warning">Repo</a>
+            </div>
           </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
   </div>
-</div>
 </section>
