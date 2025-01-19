@@ -14,13 +14,14 @@
     margin-right: 10px;
 }
 .uk-card{
-    height: 80vh;
+    height: 110vh;
   
 }
 .uk-card-footer{
     border-top: 2px solid black;
-    
+   
 }
+
 
 
 .social-icon:hover {
