@@ -13,5 +13,11 @@ def Project(request):
     all_projects = projects.objects.all()
     context = {'projects':all_projects}
     return render(request,'projects.html',context)
+
+def education_chem(request):
+    return render(request,'chem.html')
+
+def software_eng(request):
+    return render(request,'software.html')
     
 

@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
-from myapp.views import home,Project,navbar
+from myapp.views import home,Project,navbar,education_chem,software_eng
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -27,7 +27,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home,name='home'),
     # path('navbar',navbar,name='navbar'), no needed this is extra
-    path('projects/', Project,name='projects')
+    path('projects/', Project,name='projects'),
+    path('applied_chem/', education_chem,name='education_chem'),
+    path('software_eng/',software_eng,name='software')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.STATIC_ROOT)
