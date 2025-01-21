@@ -12,13 +12,12 @@
 <body style="background-color: rgb(179, 170, 170);">
     {% include 'navbar.html' %}
     <div class="container mt-5">
+        <div style="flex-direction: row;">
         <div class="card mb-3" style="max-width: 900px; margin: auto;">
-            <div class="row g-0" style="display: flex; align-items: center;">
-                <div>
+            <div class="row g-0" style="flex-direction: row;">
                     <img src="{% static 'images/pic1.jpg' %}" class="img-fluid rounded-start" alt="Profile Image" style="height: 400px; width: 190px; margin: 20px;">
-                </div>
                 <div class="col-md-8">
-                    <div class="card-body">
+                    <div class="card-body" style="padding-top: 60px;">
                         <h3 class="card-title">Amir Khonsari</h3>
                         <p class="card-text"><strong>Passionate about software engineering and problem-solving.</strong></p>
                         <p class="card-text"><strong>Dedicated to learning and improving every day.</strong></p>
@@ -35,6 +34,9 @@
             </div>
         </div>
     </div>
+    </div>
+    
+    
         <div class="card mt-5 mb-5" style="max-width: 800px; margin: auto;">
             <div class="card-body">
                 <h1 class="text-center mb-4">Skills</h1>
