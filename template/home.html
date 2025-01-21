@@ -6,55 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/home.css' %}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.22.0/dist/css/uikit.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.22.0/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.22.0/dist/js/uikit-icons.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body style="background-color: rgb(179, 170, 170);;">
+<body style="background-color: rgb(179, 170, 170);">
     {% include 'navbar.html' %}
-
-    <!-- Profile Section -->
-    <div class="uk-card uk-card-default uk-child-width-1-2@s uk-grid-collapse" uk-grid style="margin-top: 50px; padding: 0px 20px 0px 20px; background-color: rgb(179, 170, 170);">
-        <!-- Image Section -->
-        <div class="uk-card-media-left uk-cover-container">
-            <img src="{% static 'images/pic1.jpg' %}" alt="Profile Image" uk-cover style="height: 700px; width: min-content;">
-            <canvas width="100" height="500 px" ></canvas>
+    <div class="container mt-5">
+        <div class="card mb-3" style="max-width: 900px; margin: auto;">
+            <div class="row g-0" style="display: flex; align-items: center;">
+                <div>
+                    <img src="{% static 'images/pic1.jpg' %}" class="img-fluid rounded-start" alt="Profile Image" style="height: 400px; width: 190px; margin: 20px;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Amir Khonsari</h3>
+                        <p class="card-text"><strong>Passionate about software engineering and problem-solving.</strong></p>
+                        <p class="card-text"><strong>Dedicated to learning and improving every day.</strong></p>
+                        <div class="mt-4">
+                            <a href="https://github.com/Amirhosseinmk" target="_blank" class="btn btn-dark me-2">
+                                <ion-icon name="logo-github"></ion-icon> GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/amirhossein-mohammadian-khonsari-a3aab9325" target="_blank" class="btn btn-primary">
+                                <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Text Section -->
-        <div>
-            <div class="uk-card-body">
-                <h3 class="uk-card-title">Amir Khonsari</h3>
-                <p>Passionate about software engineering and problem-solving.</p>
-                <p>Dedicated to learning and improving every day.</p>
-                <!-- Social Links -->
-                <div class="mt-4">
-                    <a href="https://github.com/Amirhosseinmk" target="_blank" class="btn btn-dark me-2">
-                        <ion-icon name="logo-github"></ion-icon> GitHub
-                    </a>
-                    <a href="https://linkedin.com/in/amirhossein-mohammadian-khonsari-a3aab9325" target="_blank" class="btn btn-primary">
-                        <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
-                    </a>
+    </div>
+        <div class="card mt-5 mb-5" style="max-width: 800px; margin: auto;">
+            <div class="card-body">
+                <h1 class="text-center mb-4">Skills</h1>
+                <div class="row">
+                   
+                    <div class="col-md-6 mb-3">
+                        <h5>Python</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 0;" data-progress="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-3">
+                        <h5>C/C++</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 0;" data-progress="75"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-3">
+                        <h5>SQL</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 0;" data-progress="85"></div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-6 mb-3">
+                        <h5>HTML/CSS</h5>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 0;" data-progress="70"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-   
-    <div class="uk-card-footer " style="margin-top:0px ;background-color: rgb(179, 170, 170);">
-        <div class="uk-container " style="text-align: center;">
-            <h4>Get In Touch</h4>
-            <p>
-                Currently seeking Software Engineering or Software Development internship opportunities! <br>
-                Contact me at: 
-                <a href="mailto:amir-hossein@myseneca.ca" class="uk-link-reset">
-                    amir-hossein@myseneca.ca
-                </a>
-            </p>
-        </div>
+  
+    <div class="card-footer bg-transparent text-center" style="border-top: 2px solid black; padding-bottom: 10px; font-size: larger;">
+        <h2>Get In Touch</h2>
+        <p>
+            Currently seeking Software Engineering or Software Development internship opportunities! <br>
+            Contact me at: 
+            <a href="mailto:amir-hossein@myseneca.ca" class="text-success">
+                amir-hossein@myseneca.ca
+            </a>
+        </p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.22.0/dist/js/uikit.min.js"></script>
+   
+    <script>
+       
+        document.querySelectorAll('.progress-bar').forEach(bar => {
+            const progress = bar.getAttribute('data-progress');
+            setTimeout(() => {
+                bar.style.width = progress + '%';
+            }, 100);
+        });
+    </script>
 </body>
 </html>

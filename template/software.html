@@ -5,17 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Engineering - Education</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'styles/software.css' %}">
 </head>
 <body>
-    {% include 'navbar.html' %} <!-- Include the navbar -->
+    {% include 'navbar.html' %} 
 
-    <!-- Education Section -->
-    <section class="education">
+    <section class="education" style="padding-bottom: 20px;">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12 text-center">
@@ -26,7 +23,7 @@
                         <div class="card-body">
                             <h3 class="card-title">Bachelor of Software Engineering (BSA) - Seneca College</h3>
                             <p class="card-text mt-3">
-                                I am currently in my <strong>second year</strong> of the <strong>Bachelor of Software Engineering (BSA)</strong> program at <strong>Seneca College</strong>. This program has provided me with hands-on experience in software development, systems analysis, and project implementation.
+                                I am currently in my <strong>second year</strong> of the <strong>Bachelor of Software Engineering (BSA)</strong> program at <strong>Seneca College with GPA 3.7</strong>. This program has provided me with hands-on experience in software development, systems analysis, and project implementation.
                             </p>
                             <h4 class="mt-4">Courses and Skills</h4>
                             <p>In my second year, I am exploring advanced topics, including:</p>
@@ -34,7 +31,10 @@
                                 <li>Operating Systems</li>
                                 <li>Data Structures and Algorithms</li>
                                 <li>Artificial Intelligence (AI)</li>
+                                <li>Software Development and Deployment</li>
+                                <li>Object-Oriented Programming</li>
                                 <li>Advanced Programming with C and C++</li>
+                                <li>Database Design Principles</li>
                             </ul>
                             <p>In the first year, I successfully completed foundational courses that helped me build strong knowledge in:</p>
                             <ul>
@@ -52,6 +52,7 @@
                                 <li>Building an <strong>Automated Weather Station (AWS)</strong> using C++</li>
                                 <li>Designing and implementing a <strong>Backend for an E-commerce Application</strong> with Python and Django</li>
                                 <li>Creating this <strong>Portfolio Website</strong> using HTML, CSS, and Django</li>
+                                <li>Creating <strong>Secure File Sharing</strong> using python, CSS, JavaScript and Django Framework</li>
                             </ul>
                             <p>
                                 These projects have helped me strengthen my programming skills, including problem-solving, system design, and backend development. I also gained practical experience working with team collaboration tools like GitHub.
@@ -64,6 +65,7 @@
                                 <li><strong>Database:</strong> SQL, ERD design</li>
                                 <li><strong>Tools:</strong> Git/GitHub</li>
                             </ul>
+                            <p>If you want to see this portfolio ERD click here <a class="btn btn-warning" href="{% static 'images/portfolio.jpg' %}">ERD</a></p>
                         </div>
                     </div>
                 </div>
@@ -71,7 +73,6 @@
         </div>
     </section>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
